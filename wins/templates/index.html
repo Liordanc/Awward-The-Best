@@ -169,7 +169,7 @@ section .section-title {
         <h2 style="margin:auto;padding-bottom:5px; text-transform: uppercase; margin-top:70px; font-family: 'Abril Fatface', cursive;margin-bottom: 50px;font-weight:thin; border-bottom: 1px solid rgba(0, 0, 0, .4);width: 400px;">Projects <span style="border-bottom:5px solid #007b5e !important;top: -10px;">by</span> others</h2>
         {% for image in images%}
         <div class="col-md-4">
-        <img class="img-fluid" src="{{ post.photo.cdn_url }}-/crop/600x600/center/-/quality/lightest/" alt=""></div>
+        <img class="img-fluid" src="{{ image.image.cdn_url }}-/crop/600x600/center/-/quality/lightest/" alt=""></div>
         {% endfor %}
       </div>
     </div>
@@ -222,7 +222,7 @@ section .section-title {
           </div>	
           <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-              <p><u><a href="">Best-Awardz</a></u> Inc , will help developers from allover showcase their work [as well as inpiration]</p>
+              <p><u><a href="{% url 'welcome' %}">Best-Awardz</a></u> Inc , will help developers from allover showcase their work [as well as inpiration]</p>
               <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Geerocktricks</a></p>
             </div>
             </hr>
